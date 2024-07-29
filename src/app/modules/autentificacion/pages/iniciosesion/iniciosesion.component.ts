@@ -4,6 +4,7 @@ import { AuthService } from '../../services/auth.service';
 import { FirestoreService } from 'src/app/modules/shared/services/firestore.service';
 import { Router } from '@angular/router';
 import * as CryptoJS from 'crypto-js';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-iniciosesion',
@@ -110,7 +111,12 @@ export class IniciosesionComponent {
 
       //condicional verificada que ese usuario de la BD existiera o que sea igual al de nuestra collecion
       if (!usuarioBD || usuarioBD.empty) {
-        alert("Correo electrónico no registrado");
+        Swal.fire({
+          title: "mal ahi!",
+          text: "correo electronico incorrecto!",
+          icon: "error"
+        });
+
         this.limpiarInputs();
         return;
       }
@@ -127,7 +133,11 @@ export class IniciosesionComponent {
 
       //condicional que compara la contraseña que acabamos de encriptar y que el usuario envio con la que recibimos "usuarioDAta"
       if (hashedPassword !== usuarioData.password) {
-        alert("Contraseña incorrecta");
+        Swal.fire({
+          title: "mal ahi!",
+          text: "contraseña incorrecta!",
+          icon: "error"
+        });
 
         this.usuarios.password = '';
         return;

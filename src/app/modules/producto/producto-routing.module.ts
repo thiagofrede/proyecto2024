@@ -2,23 +2,23 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 // TODAS LAS VISTAS DEL MÓDULO PRODUCTO
-import { ProductoComponent } from './pages/producto/producto.component';
-import { AlimentacionComponent } from './pages/alimentacion/alimentacion.component';
-import { IndumentariaComponent } from './pages/indumentaria/indumentaria.component';
-import { JugueteComponent } from './pages/juguete/juguete.component';
+import { AuricularesComponent } from './pages/auriculares/auriculares.component';
+import { CelularesComponent } from './pages/celulares/celulares.component';
+import { TecladosComponent } from './pages/teclados/teclados.component';
+import { MousesComponent } from './pages/mouses/mouses.component';
 
 const routes: Routes = [
   {
-    path:"producto",component:ProductoComponent
+    path:"Auriculares",component:AuricularesComponent
   },
   {
-    path:"alimentacion",component:AlimentacionComponent
+    path:"Celulares",component:CelularesComponent
   },
   {
-    path:"indumentaria",component:IndumentariaComponent
+    path:"Teclados",component:TecladosComponent
   },
   {
-    path:"juguetes",component:JugueteComponent
+    path:"Mouses",component:MousesComponent
   }
 ];
 

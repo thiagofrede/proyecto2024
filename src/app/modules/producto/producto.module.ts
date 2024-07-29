@@ -4,18 +4,18 @@ import { CommonModule } from '@angular/common';
 import { ProductoRoutingModule } from './producto-routing.module';
 
 // VISTAS DEL MÓDULO PRODUCTO
-import { ProductoComponent } from './pages/producto/producto.component';
-import { AlimentacionComponent } from './pages/alimentacion/alimentacion.component';
-import { IndumentariaComponent } from './pages/indumentaria/indumentaria.component';
-import { JugueteComponent } from './pages/juguete/juguete.component';
+import { AuricularesComponent } from './pages/auriculares/auriculares.component';
+import { CelularesComponent } from './pages/celulares/celulares.component';
+import { TecladosComponent } from './pages/teclados/teclados.component';
+import { MousesComponent } from './pages/mouses/mouses.component';
 
 
 @NgModule({
   declarations: [
-    ProductoComponent,
-    AlimentacionComponent,
-    IndumentariaComponent,
-    JugueteComponent
+    AuricularesComponent,
+    CelularesComponent,
+    TecladosComponent,
+    MousesComponent
   ],
   imports: [
     CommonModule,

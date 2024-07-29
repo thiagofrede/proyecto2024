@@ -8,6 +8,8 @@ import { FirestoreService } from 'src/app/modules/shared/services/firestore.serv
 import { Router } from '@angular/router';
 // componente de encriptación
 import * as CryptoJS from 'crypto-js';
+//paqueteria de alerta personalizadas
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-registro',
@@ -40,16 +42,6 @@ export class RegistroComponent {
   // FUNCIÓN PARA EL REGISTRO DE NUEVOS USUARIOS
   async registrar(){
     // constante credenciales va a resguardar la información que ingrese el usuario
-    /* REGISTRO LOCAL
-    const credenciales = {
-      uid: this.usuarios.uid, // definimos al atributo de la interfaz con una variable local
-      nombre: this.usuarios.nombre,
-      apellido: this.usuarios.apellido,
-      email: this.usuarios.email,
-      rol: this.usuarios.rol,
-      password: this.usuarios.password
-    }*/
-
     // REGISTRO CON SERVICIO DE AUTH
     const credenciales = {
       email: this.usuarios.email,
@@ -59,14 +51,22 @@ export class RegistroComponent {
     const res = await this.servicioAuth.registrar(credenciales.email, credenciales.password)
     // el método THEN es una promesa que devuelve el mismo valor si todo sale bien
     .then(res => {
-      alert("¡Se pudo registrar con éxito! :)");
-
+      Swal.fire({
+        title: "¡buen trabajo!",
+        text: "se pudo registrar con exito",
+        icon: "success"
+      });
       // el método NAVIGATE nos redirecciona a otra vista
       this.servicioRutas.navigate(['/inicio']);
     })
     // el método CATCH captura una falla y la vuelve un error cuando la promesa salga mal
     .catch(error => {
       alert("Hubo un error al registrar un nuevo usuario :( \n"+error);
+      Swal.fire({
+        title: "mal ahi!",
+        text: "hubo un error :( \n"+error,
+        icon: "error"
+      });
     })
 
     // Constante UID captura el identificado de la BD
@@ -87,18 +87,6 @@ export class RegistroComponent {
 
     // Llamamos a la función limpiarInputs() para ejecutarla
     this.limpiarInputs();
-
-    // ########################## LOCAL
-    // Enviamos la nueva información como un NUEVO OBJETO a la colección de usuarios
-    // this.coleccionUsuarios.push(credenciales)
-
-    // Notificamos el éxito al registrarse para el usuario
-    // alert("¡Te registraste con éxito! :)");
-
-    // Mostramos credenciales por consola
-    // console.log(credenciales);
-    // console.log(this.coleccionUsuarios);
-    // ########################### FIN LOCAL
   }
 
   /* Función que accede a servicio FIRESTORE y envía la información 
