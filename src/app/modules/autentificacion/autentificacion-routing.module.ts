@@ -9,7 +9,7 @@ const routes: Routes = [
   },
   {
     path:"inicio-sesion",component:IniciosesionComponent
-  }
+  },
 ];
 
 @NgModule({
