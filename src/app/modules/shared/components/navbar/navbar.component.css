@@ -11,7 +11,9 @@
 /* CORRESPONDEN A PANTALLAS MÁS PEQUEÑAS -> ej.: celulares */
 @media (min-width: 300px) and (max-width: 700px) {
     mat-toolbar {
-        background-color: pink;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(25, 5, 112, 1) 38%, rgba(24, 30, 139, 1) 67%, rgba(64, 24, 121, 1) 85%, rgba(45, 0, 107, 1) 100%);
+        color: antiquewhite;
     }
 
     #menuInicio {
@@ -28,9 +30,12 @@
     mat-toolbar {
         background: rgb(2, 0, 36);
         background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(25, 5, 112, 1) 38%, rgba(24, 30, 139, 1) 67%, rgba(64, 24, 121, 1) 85%, rgba(45, 0, 107, 1) 100%);
+        color: antiquewhite;
     }
 
     #menuSecciones {
         display: none;
     }
 }
+
+/*cambiamos el color del navbar*/
