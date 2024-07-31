@@ -2,6 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ProductoRoutingModule } from './producto-routing.module';
+//si  no aparecen los componentes de material en los cards es pq no lo importamos y exportamos en el module.ts
+// COMPONENTES DE MATERIAL
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
 
 // VISTAS DEL MÓDULO PRODUCTO
 import { AuricularesComponent } from './pages/auriculares/auriculares.component';
@@ -19,7 +23,13 @@ import { MousesComponent } from './pages/mouses/mouses.component';
   ],
   imports: [
     CommonModule,
-    ProductoRoutingModule
+    ProductoRoutingModule,
+    MatButtonModule,
+    MatCardModule
+  ],
+  exports:[
+    MatButtonModule,
+    MatCardModule
   ]
 })
 export class ProductoModule { }

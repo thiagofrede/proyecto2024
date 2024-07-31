@@ -3,12 +3,12 @@ export const environment = {
     production: false,
 
     // sacamos la palabra "const" y el ";" final, cambiamos el "=" por ":"
-    firebaseConfig: {
-        apiKey: "AIzaSyCAnDyvryrGdPgbm3vVWjkN306-kmor6Pk",
-        authDomain: "programacion0-2024.firebaseapp.com",
-        projectId: "programacion0-2024",
-        storageBucket: "programacion0-2024.appspot.com",
-        messagingSenderId: "676345463094",
-        appId: "1:676345463094:web:25308e0413c2823005f397"
-    }
+    firebaseConfig : {
+        apiKey: "AIzaSyAHV1aNd-At-6GcuvsgydjrrpDRTdx9_Fw",
+        authDomain: "proyect-thifre-28ffa.firebaseapp.com",
+        projectId: "proyect-thifre-28ffa",
+        storageBucket: "proyect-thifre-28ffa.appspot.com",
+        messagingSenderId: "215488522856",
+        appId: "1:215488522856:web:8d57229d3054141414e9dd"
+      }
 }

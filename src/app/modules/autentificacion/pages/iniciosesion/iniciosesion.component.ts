@@ -133,19 +133,18 @@ export class IniciosesionComponent {
 
       //condicional que compara la contraseña que acabamos de encriptar y que el usuario envio con la que recibimos "usuarioDAta"
       if (hashedPassword !== usuarioData.password) {
-        Swal.fire({
-          title: "mal ahi!",
-          text: "contraseña incorrecta!",
-          icon: "error"
-        });
 
         this.usuarios.password = '';
         return;
       }
 
-      const res = await this.servicioAuth.iniciarSesion(credenciales.email, credenciales.password)
+     const res = await this.servicioAuth.iniciarSesion(credenciales.email, credenciales.password)
         .then(res => {
-          alert('¡Se pudo ingresar con éxito :)!');
+          Swal.fire({
+            title: "bien!",
+            text: "contraseña correcta!",
+            icon: "success"
+          });
 
           this.servicioRutas.navigate(['/inicio']);
         })
@@ -153,7 +152,7 @@ export class IniciosesionComponent {
           alert('Hubo un problema al iniciar sesión :( ' + err);
 
           this.limpiarInputs();
-        })
+        }) 
     } catch(error){
       this.limpiarInputs();
     }

@@ -12,6 +12,13 @@ export class TableComponent {
   //creamos coleccion local de productos -> definimos como array
 coleccionProductos: Producto[]=[];
 
+
+//Definimos formulario para los productos
+/*
+*Atributos alfanumericos (string) se inicializan con comillas simples
+*atributos numericos (number) se inicializan con cero ('0')
+*/
+
 producto = new FormGroup({
   nombre: new FormControl('',Validators.required),
   precio:new FormControl(0,Validators.required),

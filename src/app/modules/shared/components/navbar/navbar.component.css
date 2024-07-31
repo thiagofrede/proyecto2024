@@ -28,8 +28,8 @@
 /* ENCAPSULA ESTILOS PARA PANTALLAS MÁS GRANDES -> ej.: computadora, televisor */
 @media (min-width: 700px) {
     mat-toolbar {
-        background: rgb(2, 0, 36);
-        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(25, 5, 112, 1) 38%, rgba(24, 30, 139, 1) 67%, rgba(64, 24, 121, 1) 85%, rgba(45, 0, 107, 1) 100%);
+        background: rgb(80,37,13);
+        background: linear-gradient(90deg, rgba(80,37,13,1) 0%, rgba(110,73,43,1) 35%, rgba(156,116,76,1) 72%, rgba(150,104,77,1) 100%);
         color: antiquewhite;
     }
 
