@@ -35,3 +35,68 @@
         </tr>
     </tbody>
 </table>
+<!-- boton para agregar producto -->
+<button type="button" class="btn btn-online-primary" data-bs-toggle="modal" data-bs-target="#agregarProducto">
+    Agregar un nuevo producto
+  </button>
+  
+  <!-- modal para agregar producto -->
+  <div class="modal fade" id="agregarProducto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Ingrese un nuevo producto</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!--CUERPO DE MODAL-->
+        <div [formGroup]="producto" class="modal-body">
+            <!--NOMBRE-->
+          <div class="mb-3">
+            <label class="form-label">Ingrese el nuevo producto</label>
+            <input class="form-control" type="text" formControlName="nombre" placeholder="ej:auriculares jbl">
+          </div>
+          <!--PRECIO-->
+          <div class="mb-3">
+            <label class="form-label">Ingrese precio del producto</label>
+            <input class="form-control" type="number" formControlName="precio">
+          </div>
+          <!--DESCRIPCION-->
+          <div class="mb-3">
+            <label class="form-label">Ingrese descripcion del producto</label>
+            <input class="form-control" type="text" formControlName="descripcion" placeholder="color rojo ">
+          </div>
+        <!--CATEGORIA-->
+          <div class="mb-3">
+            <label class="form-label">Seleccione una categoria</label>
+            <select class="form-control" class="form-select" name="" id=""></select>
+          </div>
+          
+          <div class="mb-3">
+            <label class="form-label">Ingrese categoria del producto</label>
+            <input class="form-control" type="text" formControlName="categoria">
+            <option value="auriculares">auriculares</option>
+            <option value="celulares">celulares</option>
+            <option value="mouses">mouses</option>
+            <option value="teclados">teclados</option>
+
+          </div>
+          <!--IMAGEN-->
+          <div class="mb-3">
+            <label class="form-label">Ingrese una imagen</label>
+            <input class="form-control" type="text" formControlName="imagen" placeholder="ingrese vinculo de imagem">
+          </div>
+          <!--ALT   -->
+          <div class="mb-3">
+            <label class="form-label">Ingrese un texto alternativo</label>
+            <input class="form-control" type="text" formControlName="alt" placeholder="ingrese un texto alternativo">
+          </div>
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn-outline-success" data-bs-dismiss="modal">guardar</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>

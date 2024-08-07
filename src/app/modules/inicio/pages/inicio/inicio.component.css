@@ -1,3 +1,19 @@
 h1{
     text-align: center;
 }
+
+/*decoracion del card*/
+.shiba-image {
+    float: left; /* Hace que la imagen flote a la izquierda */
+    width: 150px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 10px; /* Espacio a la derecha de la imagen */
+    margin-bottom: 10px; /* Espacio en la parte inferior de la imagen */
+    border: 2px solid #ccc; /* Marco alrededor de la imagen */
+    border-radius: 5px; /* Bordes redondeados, opcional */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra, opcional */
+}
+
+.card-body {
+    overflow: hidden; /* Para evitar que el contenido sobresalga del card */
+}

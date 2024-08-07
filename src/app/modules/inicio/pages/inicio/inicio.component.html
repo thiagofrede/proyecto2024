@@ -9,15 +9,23 @@
       aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img mat-card-image  src="./assets/fotos-inicio/auriculares.jpg" class="d-block w-100"  alt="i">
+    <div class="carousel-item active"> 
+  
+        <a routerLink="/Auriculares"> <!-- Usa solo la ruta de la ruta configurada -->
+            <img mat-card-image src="./assets/fotos-inicio/auriculares.jpg" class="d-block w-100" alt="Auriculares">
+        </a>
     </div>
+    
     <div class="carousel-item">
-      <img src="./assets/fotos-inicio/Celular.jpg"  class="d-block w-100"  alt="Celular">
+      <a routerLink="/Celulares">
+        <img src="./assets/fotos-inicio/Celular.jpg"  class="d-block w-100"  alt="Celular">
+      </a>
     </div>
 
     <div class="carousel-item">
-      <img src="./assets/fotos-inicio/teclado.jpg" class="d-block w-100"  alt="...">
+      <a routerLink="/Teclados" >
+        <img src="./assets/fotos-inicio/teclado.jpg" class="d-block w-100"  alt="...">
+      </a>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -29,4 +37,22 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
+
+
+<!--cards explicando la pagina-->
+<mat-card class="example-card" appearance="outlined">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>Shiba Inu</mat-card-title>
+      <mat-card-subtitle>Large</mat-card-subtitle>
+    </mat-card-title-group>
+    <img mat-card-lg-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" class="shiba-image" alt="Shiba Inu">
+  </mat-card-header>
+  <mat-card-content>
+    {{longText}}
+  </mat-card-content>
+</mat-card>
+
+
 <app-card></app-card>

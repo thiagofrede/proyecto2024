@@ -29,7 +29,11 @@ import { MousesComponent } from './pages/mouses/mouses.component';
   ],
   exports:[
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    AuricularesComponent,
+    CelularesComponent,
+    TecladosComponent,
+    MousesComponent
   ]
 })
 export class ProductoModule { }
