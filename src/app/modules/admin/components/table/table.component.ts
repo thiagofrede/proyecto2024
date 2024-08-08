@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Producto } from 'src/app/models/producto';
 import { CrudService } from '../../services/crud.service';
-import {FormControl, FormGroup, Validator, Validators} from '@angular/forms'
+import {FormControl, FormGroup,  Validators} from '@angular/forms'
 
 @Component({
   selector: 'app-table',
@@ -11,6 +11,12 @@ import {FormControl, FormGroup, Validator, Validators} from '@angular/forms'
 export class TableComponent {
   //creamos coleccion local de productos -> definimos como array
 coleccionProductos: Producto[]=[];
+
+//variable para manejar el estado de edicion y eliminacion de productos
+modalVisibleProducto: boolean= false;
+
+//variable va a tomar el producto que nosotros elijimos
+productoSeleccionado!: Producto; //<- recibe valores vacios
 
 
 //Definimos formulario para los productos
@@ -62,4 +68,14 @@ this.servicioCrud.obtenerProducto().subscribe(producto =>{
     })
   }
  }
+
+//funcion para alertar al usuario del producto que desea eliminar
+  mostrarBorrar(productoSeleccionado: Producto){
+    //abre el modal
+  this.modalVisibleProducto = true; 
+  //toma los valores del producto elegido
+  this.productoSeleccionado = productoSeleccionado;
+ }
+
+ borrarProducto(){}
 }

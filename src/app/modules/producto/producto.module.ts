@@ -13,13 +13,15 @@ import { CelularesComponent } from './pages/celulares/celulares.component';
 import { TecladosComponent } from './pages/teclados/teclados.component';
 import { MousesComponent } from './pages/mouses/mouses.component';
 
+//vistas del modulo tabla
+import { TableComponent } from '../admin/components/table/table.component';
 
 @NgModule({
   declarations: [
     AuricularesComponent,
     CelularesComponent,
     TecladosComponent,
-    MousesComponent
+    MousesComponent,
   ],
   imports: [
     CommonModule,

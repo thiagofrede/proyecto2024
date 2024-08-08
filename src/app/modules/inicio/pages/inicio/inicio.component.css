@@ -1,19 +1,51 @@
-h1{
+h1 {
     text-align: center;
 }
 
 /*decoracion del card*/
-.shiba-image {
-    float: left; /* Hace que la imagen flote a la izquierda */
-    width: 150px; /* Ajusta el ancho de la imagen */
-    height: auto; /* Mantiene la proporción de la imagen */
-    margin-right: 10px; /* Espacio a la derecha de la imagen */
-    margin-bottom: 10px; /* Espacio en la parte inferior de la imagen */
-    border: 2px solid #ccc; /* Marco alrededor de la imagen */
-    border-radius: 5px; /* Bordes redondeados, opcional */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra, opcional */
+.example-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5DC;
+    /* Beige */
+    margin-top: 70px;
+    /* Bordes redondeados */
+    border-radius: 10px;
 }
 
-.card-body {
-    overflow: hidden; /* Para evitar que el contenido sobresalga del card */
+.card-header {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    background-color: #F0E68C;
+}
+
+.empresa-image {
+    width: 150px;
+    /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+    object-fit: cover;
+    margin-right: 16px;
+    /* Espacio entre la imagen y el texto */
+    width: 150px;
+    /* Ajusta el ancho de la imagen según tus necesidades */
+    border-radius: 10px;
+    /* Bordes redondeados */
+
+
+}
+
+.text-container {
+    flex: 1;
+    /* Permite que el texto ocupe el espacio restante */
+}
+
+mat-card-title {
+    margin: 0;
+}
+
+mat-card-subtitle {
+    margin: 0;
+    color: #666;
+    /* Opcional: Cambia el color del subtítulo si lo deseas */
 }

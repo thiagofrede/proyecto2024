@@ -38,21 +38,17 @@
   </button>
 </div>
 
-
-
-<!--cards explicando la pagina-->
+<!--card 1-->
 <mat-card class="example-card" appearance="outlined">
-  <mat-card-header>
-    <mat-card-title-group>
-      <mat-card-title>Shiba Inu</mat-card-title>
-      <mat-card-subtitle>Large</mat-card-subtitle>
-    </mat-card-title-group>
-    <img mat-card-lg-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" class="shiba-image" alt="Shiba Inu">
+  <mat-card-header class="card-header">
+    <img mat-card-lg-image src="./assets/fotos-inicio/empresa.png" class="empresa-image" alt="empresa">
+    <div class="text-container">
+      <mat-card-title>KILA NARA</mat-card-title>
+      <mat-card-content>
+        {{longText}}
+      </mat-card-content>
+    </div>
   </mat-card-header>
-  <mat-card-content>
-    {{longText}}
-  </mat-card-content>
 </mat-card>
-
-
+<!--card 2-->
 <app-card></app-card>

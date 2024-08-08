@@ -17,11 +17,12 @@ import { MatSelectModule } from '@angular/material/select';
 
 // COMPONENTE DE ANGULAR
 import { FormsModule } from '@angular/forms';
+import { TableComponent } from '../admin/components/table/table.component';
 
 @NgModule({
   declarations: [
     RegistroComponent,
-    IniciosesionComponent
+    IniciosesionComponent,
   ],
   imports: [
     CommonModule,
@@ -43,7 +44,8 @@ import { FormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatButtonModule,
     MatSelectModule,
-    FormsModule
+    FormsModule,
+
   ]
 })
 export class AutentificacionModule { }
