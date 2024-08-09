@@ -9,3 +9,17 @@ body{
     background: rgb(36,13,0);
 background: linear-gradient(90deg, rgba(36,13,0,1) 0%, rgba(84,63,45,1) 35%, rgba(106,74,42,1) 72%, rgba(79,68,25,1) 100%);
 }
+
+@media (max-width: 768px) {
+    /* Estilos para dispositivos móviles */
+    body {
+      font-size: 16px;
+    }
+    .container {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+  
+  

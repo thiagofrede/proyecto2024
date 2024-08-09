@@ -40,6 +40,25 @@ private productocollection: AngularFirestoreCollection <Producto>
    }
 
    //editar producto
+   modificarProducto(idProducto: string, nuevaData: Producto){
+
+    //accedemos a la coleccion, buscamos por ID y actualizamos informacion
+    return this.basedatos.collection('producto').doc(idProducto).update(nuevaData);
+   }
+
+
 
    //eliminar producto
+   eliminarProducto(idProducto: string){
+    return new Promise((resolve, reject)=>{
+      try{
+        // accedo a la coleccion, busco su id y lo elimino
+        const respuesta = this.productocollection.doc(idProducto).delete();
+        resolve(respuesta);
+      }
+      catch(error){
+        reject(Error);
+      }
+    })
+   }
 }

@@ -37,7 +37,7 @@ producto = new FormGroup({
 
 constructor(public servicioCrud: CrudService){}
 
-ngOinit(): void{
+ngOnInit(): void{
   //sucribe -> notifica constantemente los cambios actuales del sistema
 this.servicioCrud.obtenerProducto().subscribe(producto =>{
    this.coleccionProductos = producto;
@@ -77,5 +77,57 @@ this.servicioCrud.obtenerProducto().subscribe(producto =>{
   this.productoSeleccionado = productoSeleccionado;
  }
 
- borrarProducto(){}
+ //funcion para eliminar definitivamente al producto
+ borrarProducto(){
+  this.servicioCrud.eliminarProducto(this.productoSeleccionado.idProducto)
+  .then(respuesta => {
+    alert("el producto se ha eliminado correctamente.")
+  })
+  .catch(error => {
+    alert("no se ha podido eliminar el producto /n" +error)
+  })
+ }
+
+ //funcion para seleccionar el producto
+ mostrarEditar(productoSeleccionado: Producto){
+  this.productoSeleccionado = productoSeleccionado;
+
+
+  //enviar o "setear" los nuevos valores y reasignarls a las variables
+  // el ID no se vuelve a enviar ni se modifica, por ende no lo llamas
+  this.producto.setValue({
+    nombre:productoSeleccionado.Nombre,
+    precio:productoSeleccionado.Precio,
+    descripcion:productoSeleccionado.Descripcion,
+    categoria:productoSeleccionado.Categoria,
+    imagen: productoSeleccionado.Imagen,
+    alt:productoSeleccionado.Alt,
+
+  })
+ }
+
+//funcion para editar el producto
+ editarProducto(){
+
+  let datos: Producto = {
+    idProducto: this.productoSeleccionado.idProducto,
+    Nombre:this.producto.value.nombre!,
+    Precio:this.producto.value.precio!,
+    Descripcion:this.producto.value.descripcion!,
+    Categoria:this.producto.value.categoria!,
+    Imagen: this.producto.value.imagen!,
+    Alt: this.producto.value.alt!,
+  }
+
+  //esto se tiene que modificar con sweefalert (hacerlo en la proxima clase pq no llegas)
+  this.servicioCrud.modificarProducto(this.productoSeleccionado.idProducto, datos)
+  .then(producto =>{
+    alert("El producto fue modificado con exito.");
+  })
+  .catch(error => {
+    alert("hubo un problema al modificar el producto")
+  })
+ }
 }
+
+//cuando se ejecuta un bloque thech o un cath (pregunta para el examen)

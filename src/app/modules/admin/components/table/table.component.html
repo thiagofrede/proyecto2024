@@ -23,18 +23,43 @@
 
             <!--ACCIONES-->
                 <td>
-                    <button id="btn-edit" title="Editar" type="button" class="btn btn-outline-warning">
+                  <!--mostrarEditar() recibe como parametro el producto seleccionado o iterado en esa fila-->
+                    <button id="btn-edit" title="Editar" type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#editarProducto" style="margin-right: 10px;">
                         <mat-icon>edit</mat-icon>
                     </button>
-                </td>
-                <td>
-                    <button id="btn-edit" title="Eliminar" type="button" class="btn btn-outline-danger">
+                
+                  <!--mostrarBorrar() recibe como parametro el producto seleccionado o iterado en esa fila-->
+                    <button id="btn-delete" title="Eliminar" type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#eliminarProducto" (click)="mostrarBorrar(producto)">
                         <mat-icon>delete</mat-icon>
                     </button>
                 </td>
         </tr>
     </tbody>
 </table>
+  <!-- Modal para eliminar el producto -->
+  <div class="modal fade" *ngIf="modalVisibleProducto" id="eliminarProducto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">¿estas seguro de eliminar el producto?</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+  
+        <!--cuerpo del modal-->
+        <div class="modal-body">
+          <!--mostramos al usuario informacion del producto que quiere eliminar-->
+          {{productoSeleccionado.Nombre}}
+   
+          <img src="{{productoSeleccionado.Imagen}}" alt="{{productoSeleccionado.Alt}}" class="img-fluid modal-img">
+        </div>
+        <!--acciones del modal-->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal" (click)="borrarProducto()">Eliminar</button>
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 <!-- boton para agregar producto -->
 <button type="button" class="btn btn-online-primary" data-bs-toggle="modal" data-bs-target="#agregarProducto">
     Agregar un nuevo producto

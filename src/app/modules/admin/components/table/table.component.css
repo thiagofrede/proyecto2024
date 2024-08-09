@@ -1,0 +1,12 @@
+.table img {
+    width: 100px;  /* Ajusta el ancho */
+    height: 100px; /* Ajusta la altura */
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin deformarse */
+  }
+  /*este hace que las imagenes se adapten al marco de la alerta y no salga del marco*/
+  .modal-img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del modal */
+    height: auto;    /* Mantiene la proporción de la imagen */
+    display: block;  /* Hace que la imagen se comporte como un bloque para mejor alineación */
+    margin: 0 auto;  /* Centra la imagen dentro del modal */
+}
