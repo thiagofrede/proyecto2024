@@ -8,35 +8,9 @@ import { Animal } from 'src/app/models/animal';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
-   // PROPIEDAD PÚBLICA (TIPO: ARRAY)
-   public info: Animal[];
-  
-   constructor(){
-     this.info = [
-       {
-         id: "",
-         nombre: "Chanchito",
-         raza: "Cerdo",
-         edad: 5,
-         imagen: "https://i1.sndcdn.com/artworks-000190784980-i4qoly-t500x500.jpg",
-         alt: "Chanchito"
-       },
-       {
-         id: "",
-         nombre: "Perro",
-         raza: "Border Collie",
-         edad: 6,
-         imagen: "https://hips.hearstapps.com/hmg-prod/images/gettyimages-1371102402-645cff2ca5a62.jpg?crop=0.665xw:1.00xh;0.224xw,0&resize=1200:*",
-         alt: "Border Collie"
-       },
-       {
-         id: "",
-         nombre: "Pepe",
-         raza: "Gato",
-         edad: 2,
-         imagen: "https://i0.wp.com/puppis.blog/wp-content/uploads/2022/02/abc-cuidado-de-los-gatos-min.jpg?resize=521%2C346&ssl=1",
-         alt: "Gatito"
-       }
-     ]
-   }
+  Productosdescatacados =`
+Descubre nuestra selección de productos destacados, cuidadosamente elegidos para ofrecerte lo mejor en tecnología móvil. Cada uno de estos dispositivos ha sido seleccionado por su calidad, innovación y desempeño superior. Ya sea que busques el celular más reciente con la mejor cámara, auriculares con sonido envolvente, o accesorios que complementen tu estilo de vida digital, en nuestra tienda encontrarás opciones que superarán tus expectativas. Nos enorgullece ofrecerte lo último en tecnología para mantenerte conectado y disfrutar de la mejor experiencia móvil.`
+  empresa = `KILA NARA
+  Mi página se trata de ventas de celulares, auriculares, teclados y mouses. Es un proyecto que valora un buen ambiente de trabajo, el cual he querido reflejar en el diseño de la página. Utilicé colores suaves y tranquilizantes para transmitir una sensación de calma y confianza. Además, estos elementos visuales están diseñados para resaltar el compromiso con un servicio de calidad y la seguridad que ofrecemos a nuestros clientes. En cada detalle, mi objetivo es demostrar que en nuestro negocio, no solo encuentras productos de alta calidad, sino también un entorno en el que puedes confiar plenamente.`
+
 }

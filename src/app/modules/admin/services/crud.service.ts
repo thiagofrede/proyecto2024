@@ -36,7 +36,7 @@ private productocollection: AngularFirestoreCollection <Producto>
     //pipe=> funciona como una tuberia que retorna el nuevo arreglo de datos
     //map => "mapea" o recorre esa informacion
     //a ->resguarda la nueva informacion y la envia
-    return this.productocollection.snapshotChanges().pipe(map(action=>action.map(a=>a.payload.doc.data())));
+    return this.productocollection.snapshotChanges().pipe(map(action => action.map(a => a.payload.doc.data())))
    }
 
    //editar producto

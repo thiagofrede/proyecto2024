@@ -66,20 +66,8 @@ mat-card-subtitle {
     margin: 0 auto; /* Centra el contenido */
 }
 /*pruebas*/
-.card {
-    display: grid;
-    grid-template-columns: 300px; /* Una sola columna */
-    grid-template-rows: 210px 210px 80px; /* Tres filas de altura fija */
-    grid-template-areas: 
-        "image"  /* Área para la imagen */
-        "text"   /* Área para el texto */
-        "stats"; /* Área para las estadísticas */
-    border-radius: 18px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-    font-family: roboto, sans-serif; /* Agregado 'sans-serif' por si 'roboto' no está disponible */
-    text-align: center;
-    background: transparent; /* Fondo transparente */
-}
+
+/*fin de pruebas*/
 
 .card-image {
     grid-area: image;
@@ -120,4 +108,4 @@ mat-card-subtitle {
     background: rgb(255, 7, 110);
 }
 
-.
+

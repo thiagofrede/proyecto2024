@@ -1,25 +1,35 @@
-<div class="container">
-  
-  <div class="row">
-    <div class="col">
-      <div *ngFor="let i of info" class="contenido">
-        <mat-card class="example-card">
-          <mat-card-header>
-            <mat-card-title>{{i.nombre}}</mat-card-title>
-            <mat-card-subtitle>Edad: {{i.edad}} años</mat-card-subtitle>
-          </mat-card-header>
-          <img mat-card-image src="{{i.imagen}}" alt="{{i.alt}}">
-          <mat-card-content>
-            <p>
-              Raza: {{i.raza}}
-            </p>
-          </mat-card-content>
-          <mat-card-actions>
-            <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
-          </mat-card-actions>
-        </mat-card>
+
+<div class="container" style="display: flex; justify-content: center;">
+  <div class="card">
+    <div class="face front">
+      <img src="./assets/fotos-inicio/productos.png" alt="">
+      <h3>Productos</h3>
+    </div>
+    <div class="face back">
+      <h3>Productos destacados</h3>
+      <p>  {{ Productosdescatacados }}</p>
+      <div class="link">
+        <a href="#productos">Details</a>
       </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face front">
+      <img src="./assets/fotos-inicio/empresa.png" alt="">
+      <h3>Japan</h3>
+    </div>
+    <div class="face back">
+      <h3>Empresa</h3>
+      <p>  {{empresa}}</p>
+      <div class="link">
+        <a href="#">Details</a>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <h2>Paisaje</h2>
+      <a href="#">Ver Detalles</a>
     </div>
   </div>
 </div>
