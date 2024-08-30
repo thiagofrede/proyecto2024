@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+//funcion para modo oscuro
+cambiarFondo(){
+  let toggle: HTMLInputElement | null = document.getElementById('toggle') as HTMLInputElement
+  let label_toggle: HTMLElement | null = document.getElementById('label_toggle') as HTMLElement
+  if(toggle){
+    let checked: boolean = toggle.checked;
+    document.body.classList.toggle('dark', checked)
+    
+    if(checked){
+      label_toggle!.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    }else{
+      label_toggle.innerHTML = '<i class="fa-solid fa-moon"></i>'
+    }
 
+
+  }
+}
 }

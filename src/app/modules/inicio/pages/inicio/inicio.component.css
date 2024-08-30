@@ -52,9 +52,9 @@ mat-card-subtitle {
 
 /* Estilo del contenedor exterior */
 .outer-container {
-    background: rgb(36,13,0);
+   background: rgb(36,13,0);
     background: linear-gradient(90deg, rgba(36,13,0,1) 0%, rgba(84,63,45,1) 35%, rgba(106,74,42,1) 72%, rgba(79,68,25,1) 100%);
-    background-color: #F5F5DC; /* Color de los márgenes */
+   /* background-color: #F5F5DC; /* Color de los márgenes */
     padding: 20px; /* Este es el "margen" de color */
 }
 
@@ -108,4 +108,13 @@ mat-card-subtitle {
     background: rgb(255, 7, 110);
 }
 
-
+/*background  del gutter*/
+.inner-container{
+    background: rgb(159,133,44);
+    background: linear-gradient(0deg, rgba(159,133,44,1) 0%, rgba(185,194,93,1) 22%, rgba(200,151,45,1) 100%);
+}
+/*div con los cards*/
+.container{
+    display: flex;
+    justify-content: center;
+}
