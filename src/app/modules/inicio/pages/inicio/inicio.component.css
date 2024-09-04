@@ -52,8 +52,6 @@ mat-card-subtitle {
 
 /* Estilo del contenedor exterior */
 .outer-container {
-   background: rgb(36,13,0);
-    background: linear-gradient(90deg, rgba(36,13,0,1) 0%, rgba(84,63,45,1) 35%, rgba(106,74,42,1) 72%, rgba(79,68,25,1) 100%);
    /* background-color: #F5F5DC; /* Color de los márgenes */
     padding: 20px; /* Este es el "margen" de color */
 }

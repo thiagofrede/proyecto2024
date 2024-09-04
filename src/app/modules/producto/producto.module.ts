@@ -15,6 +15,14 @@ import { MousesComponent } from './pages/mouses/mouses.component';
 
 //vistas del modulo tabla
 import { TableComponent } from '../admin/components/table/table.component';
+//componentes locales
+
+import { ProductosComponent } from './pages/productos/productos.component';
+import { CardsComponent } from './componentes/cards/cards.component';
+import { InicioModule } from "../inicio/inicio.module";
+
+//Componentes locales
+
 
 @NgModule({
   declarations: [
@@ -22,20 +30,25 @@ import { TableComponent } from '../admin/components/table/table.component';
     CelularesComponent,
     TecladosComponent,
     MousesComponent,
+    ProductosComponent,
+    CardsComponent,
   ],
   imports: [
     CommonModule,
     ProductoRoutingModule,
     MatButtonModule,
-    MatCardModule
-  ],
+    MatCardModule,
+    InicioModule
+],
   exports:[
     MatButtonModule,
     MatCardModule,
     AuricularesComponent,
     CelularesComponent,
     TecladosComponent,
-    MousesComponent
+    MousesComponent,
+    ProductosComponent,
+    CardsComponent,
   ]
 })
 export class ProductoModule { }
