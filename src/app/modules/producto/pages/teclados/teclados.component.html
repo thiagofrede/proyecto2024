@@ -1,26 +1,9 @@
-<h1>Auriculares</h1>
 <div class="container">
-    <div class="row">
-      <div class="col-md-4" *ngFor="let i of info">
-        <mat-card class="example-card">
-          <mat-card-header>
-            <mat-card-title>{{i.Nombre}}</mat-card-title>
-            <mat-card-subtitle>Categoria:{{i.Categoria}}</mat-card-subtitle>
-           
-          </mat-card-header>
-          <img mat-card-image src="{{i.Imagen}}" alt="{{i.Alt}}">
-          <mat-card-content>
-            <p>
-              Descripcion: {{i.Descripcion}}
-            </p>
-            <p>Precio: USD{{i.Precio}}$</p>
-          </mat-card-content>
-          <mat-card-actions>
-            <button mat-button>Comprar</button>
-            <button mat-button>Agregar al carrito</button>
-          </mat-card-actions>
-        </mat-card>
+  <div class="row">
+     
+      <h1>Teclados</h1>
+      <div class="col">
+         <app-card-teclados></app-card-teclados>
       </div>
-    </div>
   </div>
- 
+</div>

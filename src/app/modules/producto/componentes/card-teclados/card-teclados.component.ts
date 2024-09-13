@@ -3,16 +3,18 @@ import { Producto } from 'src/app/models/producto';
 import { CrudService } from 'src/app/modules/admin/services/crud.service';
 
 @Component({
-  selector: 'app-card-auriculares',
-  templateUrl: './card-auriculares.component.html',
-  styleUrls: ['./card-auriculares.component.css']
+  selector: 'app-card-teclados',
+  templateUrl: './card-teclados.component.html',
+  styleUrls: ['./card-teclados.component.css']
 })
-export class CardAuricularesComponent {
+export class CardTecladosComponent {
+
+  
   // Colección de todos los productos
   coleccionProductos: Producto[] = [];
 
   // Colección de sólo productos de categoría "auriculares"
-  coleccionAuriculares: Producto[] = [];
+  coleccionTeclados: Producto[] = [];
 
   productoSeleccionado!: Producto;
 
@@ -25,20 +27,20 @@ export class CardAuricularesComponent {
       this.coleccionProductos = Producto;
 
       // mostrar la colección actual de auriculares
-      this.mostrarProductoAuriculares();
+      this.mostrarProductoTeclados();
     })
   }
 
-  // Función para filtrar los productos que sean del tipo "Auriculares"
-  mostrarProductoAuriculares(){
+  // Función para filtrar los productos que sean del tipo "teclados"
+  mostrarProductoTeclados(){
     // forEach: itera la colección
     this.coleccionProductos.forEach(Producto => {
-      // Si la categoría del producto es igual a "auriculares", se enviará a la 
+      // Si la categoría del producto es igual a "teclados", se enviará a la 
       // colección de juguetes específicada
 
-      if(Producto.Categoria === "auriculares"){
+      if(Producto.Categoria === "teclados"){
         // .push: sube o agrega un item a una colección
-        this.coleccionAuriculares.push(Producto);
+        this.coleccionTeclados.push(Producto);
       }
     })
   }

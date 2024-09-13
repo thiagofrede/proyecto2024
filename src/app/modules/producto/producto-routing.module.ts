@@ -6,6 +6,7 @@ import { AuricularesComponent } from './pages/auriculares/auriculares.component'
 import { CelularesComponent } from './pages/celulares/celulares.component';
 import { TecladosComponent } from './pages/teclados/teclados.component';
 import { MousesComponent } from './pages/mouses/mouses.component';
+import { ProductosComponent } from './pages/productos/productos.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,9 @@ const routes: Routes = [
   },
   {
     path:"Mouses",component:MousesComponent
+  },
+  {
+    path:"Productos", component:ProductosComponent
   }
 ];
 

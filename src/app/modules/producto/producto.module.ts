@@ -20,6 +20,9 @@ import { TableComponent } from '../admin/components/table/table.component';
 import { ProductosComponent } from './pages/productos/productos.component';
 import { CardsComponent } from './componentes/cards/cards.component';
 import { InicioModule } from "../inicio/inicio.module";
+import { CardAuricularesComponent } from './componentes/card-auriculares/card-auriculares.component';
+import { CarruselComponent } from './componentes/carrusel/carrusel.component';
+import { CardTecladosComponent } from './componentes/card-teclados/card-teclados.component';
 
 //Componentes locales
 
@@ -32,6 +35,10 @@ import { InicioModule } from "../inicio/inicio.module";
     MousesComponent,
     ProductosComponent,
     CardsComponent,
+    CardAuricularesComponent,
+    CarruselComponent,
+    CardTecladosComponent
+    
   ],
   imports: [
     CommonModule,
@@ -49,6 +56,9 @@ import { InicioModule } from "../inicio/inicio.module";
     MousesComponent,
     ProductosComponent,
     CardsComponent,
+    CardAuricularesComponent,
+    CarruselComponent,
+    CardTecladosComponent
   ]
 })
 export class ProductoModule { }

@@ -19,8 +19,8 @@ body {
 /* Estilos de la tarjeta */
 .card {
     position: relative;
-    width: 300px;
-    height: 350px;
+    width: 150px;
+    height: 175px;
     margin: 20px;
     overflow: hidden; /* Asegura que el contenido no se desborde */
 }
@@ -91,8 +91,8 @@ body {
 /* Estilos de la tarjeta */
 .card {
     position: relative;
-    width: 300px;
-    height: 350px;
+    width: 150px;
+    height: 175px;
     overflow: hidden; /* Asegura que el contenido no se desborde */
 }
 
@@ -170,8 +170,8 @@ body {
 }
 
 .card img {
-    width: 300px;   /* Establece el ancho de la imagen */
-    height: 300px;  /* Establece la altura de la imagen */
+    width: 150px;   /* Establece el ancho de la imagen */
+    height: 175px;  /* Establece la altura de la imagen */
     object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
 }
 
