@@ -1,0 +1,26 @@
+.custom-card {
+    height: 350px; /* Altura fija para todas las tarjetas */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye el contenido uniformemente */
+    margin-bottom: 20px; /* Espacio vertical entre las tarjetas */
+    margin-right: 15px; /* Espacio horizontal entre las tarjetas */
+  }
+  
+  .custom-card .card-body {
+    text-overflow: ellipsis; /* Pone puntos suspensivos si el texto es largo */
+  }
+  
+  .card-img-top {
+    height: 250px; /* Tamaño para la imagen */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+  }
+  .col {
+    margin-bottom: 30px; /* Asegura un mayor espacio entre las filas de tarjetas */
+  }
+  
+  .row {
+    margin-left: -15px; /* Ajuste para garantizar que las columnas no se junten al borde */
+    margin-right: -15px;
+  }
+  

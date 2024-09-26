@@ -1,7 +1,22 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core'; 
 import { Producto } from 'src/app/models/producto';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 import {map} from 'rxjs'
+// Importaciones para el manejo de archivos y referencias de Storage
+import { getDownloadURL, getStorage, ref, UploadResult, uploadString, deleteObject } from 'firebase/storage';
+
+/*
+  getDownloadURL -> Para obtener la URL de descarga de una imagen subida
+  getStorage -> Para obtener la instancia de almacenamiento
+  ref -> Para crear referencias a ubicaciones en el almacenamiento
+  UploadResult -> Tipo que representa el resultado de una operación subida
+  uploadString -> Para subir imágenes en formato de cadena (string)
+  deleteObject -> Para eliminar un espacio en el almacenamiento
+*/
+
+
+
+
 
 @Injectable({ 
   providedIn: 'root'
