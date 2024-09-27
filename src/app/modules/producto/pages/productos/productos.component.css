@@ -6,4 +6,48 @@
 h1{
     padding: 1rem;
 }
+/* Asegurar que los contenedores de las cards ocupen todo el alto disponible */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+/* Las tarjetas deben ocupar todo el espacio disponible en su contenedor */
+.app-cards {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Fuerza a todas las tarjetas a tener la misma altura */
+    min-height: 400px; /* Puedes ajustar este valor según tu diseño */
+    max-height: 100%;
+}
+
+/* Imágenes uniformes */
+.app-cards img {
+    height: auto;
+    max-height: 200px; /* Limita la altura máxima de la imagen */
+    object-fit: cover; /* Ajusta la imagen para que no se distorsione */
+    width: 100%; /* Ocupar todo el ancho del contenedor */
+}
+
+/* Asegura que el contenido textual tenga un alto fijo */
+.app-cards .card-body {
+    flex-grow: 1; /* Esto hará que el contenido crezca según sea necesario */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+/* Alinear el botón de 'Ver más' al final */
+.app-cards .btn {
+    margin-top: auto; /* Empuja el botón hacia abajo */
+}
+
+/* Opcional: Ajustar el tamaño de los títulos y descripciones */
+.app-cards h5 {
+    font-size: 16px; /* Ajusta según sea necesario */
+}
+
+.app-cards p {
+    font-size: 14px; /* Ajusta el tamaño del texto */
+}

@@ -1,25 +1,36 @@
-<div class="container">
-  <div class="row">
-      <h1>Inicio</h1>
 
-      <div class="col">
-          <div *ngFor="let i of info" class="contenido">
-              <mat-card class="example-card">
-                  <mat-card-header>
-                    <mat-card-title>{{i.Nombre}}</mat-card-title>
-                  </mat-card-header>
-                  <img mat-card-image src="{{i.Imagen}}" alt="{{i.Alt}}">
-                  <mat-card-content>
-                    <p>
-                      {{i.Descripcion}}
-                    </p>
-                  </mat-card-content>
-                  <mat-card-actions>
-                    <button mat-button>LIKE</button>
-                    <button mat-button>SHARE</button>
-                  </mat-card-actions>
-                </mat-card>                
-          </div>
-      </div>
-  </div>
-</div>
+  <div class="container">
+    <div class="contenido-card">
+      <div class="card__container">
+        <article class="card__article">
+           <img src="./assets/fotos-inicio/empresa.png" alt="image" class="card__img">
+ 
+           <div class="card__data">
+              <span class="card__description">Innovación, Calidad, Tecnología</span>
+              <h2 class="card__title">ubicada en estados unidos</h2>
+              <a href="#" class="card__button">leer más</a>
+           </div>
+        </article>
+ 
+        <article class="card__article">
+           <img src="./assets/fotos-inicio/Celular.jpg" alt="image" class="card__img">
+ 
+           <div class="card__data">
+              <span class="card__description">Rapidos, Calidad, Precio</span>
+              <h2 class="card__title">Ultima generacion</h2>
+              <a href="#" class="card__button">leer más</a>
+           </div>
+        </article>
+ 
+        <article class="card__article">
+           <img src="./assets/fotos-inicio/teclado.png" alt="image" class="card__img">
+ 
+           <div class="card__data">
+              <span class="card__description">Ergonomía, Personalización, Rendimiento.</span>
+              <h2 class="card__title">Mecanicos y de la mejor calidad</h2>
+              <a href="#" class="card__button">leer más</a>
+           </div>
+        </article>
+     </div>
+    </div>
+ </div>

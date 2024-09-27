@@ -53,9 +53,9 @@ body {
 }
 
 .dark {
-  background-color: black;
+ background-color: black;
 
-  color: white;
+  color: rgb(255, 255, 255);
   transition: all 1.5 ease;
 }
 
@@ -65,4 +65,8 @@ body {
 /*
   background: rgb(36, 13, 0);
   background: linear-gradient(90deg, rgba(36, 13, 0, 1) 0%, rgba(84, 63, 45, 1) 35%, rgba(106, 74, 42, 1) 72%, rgba(79, 68, 25, 1) 100%);
-*/
+
+
+  segunda opcion:
+background: rgb(12,12,13);
+background: linear-gradient(90deg, rgba(12,12,13,1) 0%, rgba(39,39,89,1) 26%, rgba(84,46,124,1) 50%, rgba(140,78,152,1) 100%);*/
