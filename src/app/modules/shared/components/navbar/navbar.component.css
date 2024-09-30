@@ -49,8 +49,8 @@ background: linear-gradient(90deg, rgba(99,99,122,1) 0%, rgba(74,74,125,1) 27%, 
 
 
 .logo {
-    width: 90px;  /* Ancho de 100 píxeles */
-    height: 90px; /* Alto de 100 píxeles */
+    width: 80px;  /* Ancho de 100 píxeles */
+    height: 80px; /* Alto de 100 píxeles */
     object-fit: contain; /* Mantiene la proporción de la imagen */
 }
 

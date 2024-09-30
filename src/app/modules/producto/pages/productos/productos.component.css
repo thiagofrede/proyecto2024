@@ -1,53 +1,83 @@
-.container{
-    text-align: center;
-    justify-content: center;
-    display: flex;
-}
-h1{
-    padding: 1rem;
-}
-/* Asegurar que los contenedores de las cards ocupen todo el alto disponible */
-.row {
+
+
+app-carrusel{
+  .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    align-items: center; /* Centra las tarjetas verticalmente */
+    padding: 1rem;
+    gap: 20px;
 }
 
-/* Las tarjetas deben ocupar todo el espacio disponible en su contenedor */
-.app-cards {
-    display: flex;
-    flex-direction: column;
-    height: 100%; /* Fuerza a todas las tarjetas a tener la misma altura */
-    min-height: 400px; /* Puedes ajustar este valor según tu diseño */
-    max-height: 100%;
+      
+      h1 {
+        padding: 1rem;
+      }
+      
+      /* Asegurar que los contenedores de las cards ocupen todo el alto disponible */
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centra las tarjetas */
+        gap: 20px; /* Espacio entre las tarjetas */
+      }
+      
+      /* Las tarjetas deben tener el mismo tamaño */
+      .app-cards {
+        display: flex;
+        flex-direction: column;
+        height: 400px; /* Altura fija para todas las tarjetas */
+        width: 300px; /* Ancho fijo para todas las tarjetas */
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden; /* Asegura que el contenido no se desborde */
+      }
+      
+      /* Imágenes uniformes */
+      .app-cards img {
+        height: 200px; /* Altura fija para las imágenes */
+        object-fit: cover; /* Ajusta la imagen para que no se distorsione */
+        width: 100%; /* Ocupar todo el ancho del contenedor */
+      }
+      
+      /* Asegura que el contenido textual tenga el mismo tamaño */
+      .app-cards .card-body {
+        flex-grow: 1; /* Esto hará que el contenido crezca según sea necesario */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 15px;
+      }
+      
+      /* Alinear el botón de 'Ver más' al final */
+      .app-cards .btn {
+        margin-top: auto; /* Empuja el botón hacia abajo */
+      }
+      
+      /* Opcional: Ajustar el tamaño de los títulos y descripciones */
+      .app-cards h5 {
+        font-size: 16px; /* Ajusta según sea necesario */
+      }
+      
+      .app-cards p {
+        font-size: 14px; /* Ajusta el tamaño del texto */
+      }
+      
+      /* Ajustes responsivos para pantallas más pequeñas */
+      @media (max-width: 900px) {
+        .app-cards {
+          width: 45%; /* Ocupa el 45% del ancho disponible en pantallas medianas */
+        }
+      }
+      
+      @media (max-width: 600px) {
+        .app-cards {
+          width: 100%; /* Ocupa el 100% del ancho disponible en pantallas pequeñas */
+        }
+      }
+      
+    
 }
 
-/* Imágenes uniformes */
-.app-cards img {
-    height: auto;
-    max-height: 200px; /* Limita la altura máxima de la imagen */
-    object-fit: cover; /* Ajusta la imagen para que no se distorsione */
-    width: 100%; /* Ocupar todo el ancho del contenedor */
-}
-
-/* Asegura que el contenido textual tenga un alto fijo */
-.app-cards .card-body {
-    flex-grow: 1; /* Esto hará que el contenido crezca según sea necesario */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 15px;
-}
-
-/* Alinear el botón de 'Ver más' al final */
-.app-cards .btn {
-    margin-top: auto; /* Empuja el botón hacia abajo */
-}
-
-/* Opcional: Ajustar el tamaño de los títulos y descripciones */
-.app-cards h5 {
-    font-size: 16px; /* Ajusta según sea necesario */
-}
-
-.app-cards p {
-    font-size: 14px; /* Ajusta el tamaño del texto */
-}

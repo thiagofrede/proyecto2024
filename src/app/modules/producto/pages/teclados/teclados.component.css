@@ -7,3 +7,7 @@ h1{
     font-style: normal;
   
 }
+app-cardteclados{
+    display: flex;
+    justify-content: center;
+}

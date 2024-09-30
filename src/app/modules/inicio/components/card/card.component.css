@@ -79,8 +79,7 @@ img {
   display: flex; /*grid*/
   justify-content: space-around; /**/
   flex-direction: row; /**/
-  place-items: center;
-  margin-inline: 1.5rem;
+  margin-inline: 1.5rem; /*  place-items: center; se le quita esta etiqueta para que el titulo no este tan separado de las cards*/
   padding-block: 5rem;
   padding: 20px; 
 }
@@ -244,7 +243,7 @@ img {
 /* For large devices */
 @media screen and (min-width: 1120px) {
   .container {
-    height: 100vh;
+  
   }
 
   .card__container {

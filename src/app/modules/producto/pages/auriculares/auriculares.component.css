@@ -10,7 +10,10 @@
 h1 {
     text-align: center;
 }
-
+app-cardauriculares{
+    display: flex;
+    justify-content: center;
+}
 /* Estilo para cada tarjeta o contenido */
 .contenido {
     width: 200px; /* Tamaño fijo, puede ajustarse según sea necesario */

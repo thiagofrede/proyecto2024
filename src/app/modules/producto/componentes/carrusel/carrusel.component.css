@@ -8,7 +8,10 @@
 .app-cards {
   display: flex;
   flex-direction: column;
-  height: 100%;
+
+  height: 200px; /* Altura fija para las imágenes */
+  object-fit: cover; /* Ajusta la imagen para que no se distorsione */
+  width: 100%; /* Ocupar todo el ancho del contenedor */
 }
 
 /* Asegura que el contenido de las cards se ajuste */
