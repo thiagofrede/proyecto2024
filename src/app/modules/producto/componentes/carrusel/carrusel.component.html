@@ -2,10 +2,7 @@
 
   
         <div class="col">
-            <app-cards
-            (productoAgregado) = "productoAnadido($event)"
-            [productoReciente] = "product"
-            ></app-cards>
+            <app-cards (productoAgregado)="productoAnadido($event)" [productoReciente]="product"></app-cards>
         </div>
     </div>
   
