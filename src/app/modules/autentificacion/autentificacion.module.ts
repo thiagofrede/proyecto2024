@@ -19,6 +19,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
 import { TableComponent } from '../admin/components/table/table.component';
 
+
 @NgModule({
   declarations: [
     RegistroComponent,

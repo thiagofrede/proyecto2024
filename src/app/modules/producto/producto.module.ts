@@ -23,6 +23,7 @@ import { InicioModule } from "../inicio/inicio.module";
 import { CardAuricularesComponent } from './componentes/card-auriculares/card-auriculares.component';
 import { CarruselComponent } from './componentes/carrusel/carrusel.component';
 import { CardTecladosComponent } from './componentes/card-teclados/card-teclados.component';
+import { CardMousesComponent } from './componentes/card-mouses/card-mouses.component';
 
 //Componentes locales
 
@@ -37,7 +38,8 @@ import { CardTecladosComponent } from './componentes/card-teclados/card-teclados
     CardsComponent,
     CardAuricularesComponent,
     CarruselComponent,
-    CardTecladosComponent
+    CardTecladosComponent,
+    CardMousesComponent
     
   ],
   imports: [
@@ -58,7 +60,8 @@ import { CardTecladosComponent } from './componentes/card-teclados/card-teclados
     CardsComponent,
     CardAuricularesComponent,
     CarruselComponent,
-    CardTecladosComponent
+    CardTecladosComponent,
+    CardMousesComponent
   ]
 })
 export class ProductoModule { }

@@ -28,7 +28,8 @@
           data-bs-target="#editarProducto" style="margin-right: 10px;" (click)="mostrarEditar(producto)">
           <mat-icon>edit</mat-icon>
         </button>
-
+        </td>
+        <td>
         <!--mostrarBorrar() recibe como parametro el producto seleccionado o iterado en esa fila-->
         <button id="btn-delete" title="Eliminar" type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
           data-bs-target="#eliminarProducto" (click)="mostrarBorrar(producto)">
@@ -42,6 +43,15 @@
 <button type="button" class="btn btn-online-primary" data-bs-toggle="modal" data-bs-target="#agregarProducto">
   Agregar un nuevo producto
 </button>
+
+
+
+
+
+
+
+
+
 
 <!-- modal para agregar producto -->
 <div class="modal fade" id="agregarProducto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -57,17 +67,17 @@
         <!--NOMBRE-->
         <div class="mb-3">
           <label class="form-label">Ingrese el nuevo producto</label>
-          <input class="form-control" type="text" formControlName="nombre" placeholder="ej:auriculares jbl">
+          <input class="form-control" type="text" formControlName="Nombre" placeholder="ej:auriculares jbl">
         </div>
         <!--PRECIO-->
         <div class="mb-3">
           <label class="form-label">Ingrese precio del producto</label>
-          <input class="form-control" type="number" formControlName="precio">
+          <input class="form-control" type="number" formControlName="Precio">
         </div>
         <!--DESCRIPCION-->
         <div class="mb-3">
           <label class="form-label">Ingrese descripcion del producto</label>
-          <input class="form-control" type="text" formControlName="descripcion" placeholder="color rojo ">
+          <input class="form-control" type="text" formControlName="Descripcion" placeholder="color rojo ">
         </div>
         <!--CATEGORIA-->
         <div class="mb-3">
@@ -83,13 +93,21 @@
 
           <!--IMAGEN-->
           <div class="mb-3">
-            <label class="form-label">Ingrese una imagen</label>
-            <input class="form-control" type="text" formControlName="imagen" placeholder="ingrese vinculo de imagem">
-          </div>
+            <label class="form-label">Ingrese una imagen:</label>
+            <input class="form-control" type="text" formControlName="Imagen"
+                placeholder="Ingrese vínculo de una imagen">
+            <!--
+                type="file" <- recibe archivos
+                accept="imagen/*" <- acepte todo tipo de extensiones (jpg, jpeg, png, gif)
+                (change)="cargarImagen($event)" <- ejecuta el evento de cargarImagen que 
+                definimos en el table.ts
+              -->
+            <input type="file" accept="imagen/*" (change)="cargarImagen($event)">
+        </div>
           <!--ALT   -->
           <div class="mb-3">
             <label class="form-label">Ingrese un texto alternativo</label>
-            <input class="form-control" type="text" formControlName="alt" placeholder="ingrese un texto alternativo">
+            <input class="form-control" type="text" formControlName="Alt" placeholder="ingrese un texto alternativo">
           </div>
 
         </div>
@@ -97,10 +115,22 @@
           <button type="button" class="btn-outline-success" data-bs-dismiss="modal"
             (click)="agregarProducto()">guardar</button>
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
-        </div>
+        
       </div>
     </div>
   </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
 
    <!-- MODAL PARA EDITAR PRODUCTOS -->
 <!-- Cambiamos nombre de variable que itera la colección -->
@@ -143,10 +173,11 @@
               </div>
 
               <div class="mb-3">
-                  <label class="form-label">Ingrese una imagen:</label>
-                  <input class="form-control" type="text" formControlName="imagen"
-                      placeholder="{{productoEdit.Imagen}}">
-              </div>
+                <label class="form-label">Ingrese una imagen:</label>
+                <!-- <input class="form-control" type="text" formControlName="imagen"
+                        placeholder="{{productoEdit.imagen}}"> -->
+                        <input type="file" accept="imagen/*" (change)="cargarImagen($event)">
+            </div>
 
               <div class="mb-3">
                   <label class="form-label">Ingrese texto alternativo:</label>
@@ -163,6 +194,15 @@
       </div>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
 
 
 
