@@ -3,7 +3,10 @@ h1 {
     margin-bottom: 2px; /* Ajusta este valor para cambiar la separación entre el título y las imágenes */
     color: #4c2c82;
 }
-
+h2{
+  display: flex;
+  justify-content: center;
+}
 #titulo{
   margin-top: 10px;
     font-size: 45px;
@@ -158,3 +161,10 @@ mat-card {
     }
   }
   
+
+  /*card de ofertas*/
+  .containercard{
+    display: flex;
+    justify-content: center;
+  }
+

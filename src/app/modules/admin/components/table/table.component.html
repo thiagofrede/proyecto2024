@@ -102,7 +102,7 @@
                 (change)="cargarImagen($event)" <- ejecuta el evento de cargarImagen que 
                 definimos en el table.ts
               -->
-            <input type="file" accept="imagen/*" (change)="cargarImagen($event)">
+            <input type="file" accept="Imagen/*" (change)="cargarImagen($event)">
         </div>
           <!--ALT   -->
           <div class="mb-3">
@@ -147,24 +147,24 @@
           <div [formGroup]="producto" class="modal-body">
               <div class="mb-3">
                   <label class="form-label">Ingrese el nombre del producto:</label>
-                  <input class="form-control" type="text" formControlName="nombre"
+                  <input class="form-control" type="text" formControlName="Nombre"
                       placeholder="{{productoEdit.Nombre}}">
               </div>
 
               <div class="mb-3">
                   <label class="form-label">Ingrese descripción del producto:</label>
-                  <input class="form-control" type="text" formControlName="descripcion"
+                  <input class="form-control" type="text" formControlName="Descripcion"
                       placeholder="{{productoEdit.Descripcion}}">
               </div>
 
               <div class="mb-3">
                   <label class="form-label">Ingrese el precio:</label>
-                  <input class="form-control" type="number" formControlName="precio" placeholder="{{productoEdit.Precio}}">
+                  <input class="form-control" type="number" formControlName="Precio" placeholder="{{productoEdit.Precio}}">
               </div>
 
               <div class="mb-3">
                   <label class="form-label">Seleccione una categoría:</label>
-                  <select class="form-control form-select" formControlName="categoria" aria-label="Default select example">
+                  <select class="form-control form-select" formControlName="Categoria" aria-label="Default select example">
                       <option disabled selected>Elija una opción</option>
                       <option value="alimentacion">Alimentación</option>
                       <option value="indumentaria">Indumentaria</option>
@@ -176,12 +176,12 @@
                 <label class="form-label">Ingrese una imagen:</label>
                 <!-- <input class="form-control" type="text" formControlName="imagen"
                         placeholder="{{productoEdit.imagen}}"> -->
-                        <input type="file" accept="imagen/*" (change)="cargarImagen($event)">
+                        <input type="file" accept="Imagen/*" (change)="cargarImagen($event)">
             </div>
 
               <div class="mb-3">
                   <label class="form-label">Ingrese texto alternativo:</label>
-                  <input class="form-control" type="text" formControlName="alt"
+                  <input class="form-control" type="text" formControlName="Alt"
                       placeholder="{{productoEdit.Alt}}">
               </div>
           </div>
@@ -234,3 +234,44 @@
         </div>
       </div>
     </div>
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

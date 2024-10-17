@@ -89,7 +89,7 @@ export class IniciosesionComponent {
             console.log("inicio de sesion de usuario administrador")
 
             //si es admin, redirecciona a la vista de 'admin'
-            this.servicioRutas.navigate(['/inicio']);
+            this.servicioRutas.navigate(['/admin']);
           }else{
             console.log("inicio de sesion de usuario visitante");
 

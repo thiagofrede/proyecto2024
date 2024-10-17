@@ -95,6 +95,7 @@ img {
 .card__container {
   margin: auto;
   display: flex;
+  justify-content: center;
   row-gap: 3.5rem;
   gap: 30px;  /* Añade un espacio de 30px entre las tarjetas */
   flex-wrap: wrap; 
@@ -113,6 +114,7 @@ img {
   border-radius: 10px;
   width: 300px;
   text-align: center;
+
   
 }
 
@@ -242,9 +244,7 @@ img {
 
 /* For large devices */
 @media screen and (min-width: 1120px) {
-  .container {
-  
-  }
+
 
   .card__container {
     grid-template-columns: repeat(3, 1fr);
