@@ -5,7 +5,7 @@ import { TableComponent } from './components/table/table.component';
 
 const routes: Routes = [
   {
-    path:"Admin", component:AdminComponent
+    path:"admin", component:AdminComponent
   },
   {
     path:"table", component:TableComponent
