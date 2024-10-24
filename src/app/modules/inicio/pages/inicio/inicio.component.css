@@ -7,21 +7,6 @@ h2{
   display: flex;
   justify-content: center;
 }
-#titulo{
-  margin-top: 10px;
-    font-size: 45px;
-    font-family: "Sixtyfour Convergence", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "BLED" 0,
-      "SCAN" 0,
-      "XELA" 0,
-      "YELA" 0;
-  color: #4c2c82;
-  
-}
 
 mat-card-image{
     height: 300px;
@@ -93,8 +78,8 @@ mat-card-subtitle {
 mat-card {
     display: flex;
     justify-content: center;
-    background: rgb(23, 0, 36);
-    background: radial-gradient(circle, rgba(23, 0, 36, 0.888) 0%, rgba(45, 45, 111, 1) 35%, rgba(94, 15, 122, 0.787) 100%);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 12%, rgba(9,9,121,1) 71%, rgba(24,101,116,1) 100%);
     margin: 200px;
     margin-top: 70px;
   }
@@ -124,7 +109,8 @@ mat-card {
   mat-card-content {
     flex: 1;
     padding: 20px;
-    background: linear-gradient(45deg, #4b2c82, #8e44ad);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 12%, rgba(9,9,121,1) 71%, rgba(24,101,116,1) 100%);
     color: white;
     display: flex;
     flex-direction: column;

@@ -3,32 +3,35 @@
   <div>
     <img mat-card-image  src="./assets/logos/logo.png" alt="" class="logo">
   </div>
+  
   <!-- Menú desplegable para cuando la pantalla sea menor a 700px -->
-    <button id="menuSecciones" mat-icon-button class="example-icon" [matMenuTriggerFor]="seccion">
-      <mat-icon>menu</mat-icon>
+  <button id="menuSecciones" mat-icon-button class="example-icon" [matMenuTriggerFor]="seccion">
+    <mat-icon>menu</mat-icon>
     </button>
 
     <mat-menu #seccion="matMenu">
       <button mat-menu-item routerLink="/inicio">Inicio</button>
       <button mat-menu-item [matMenuTriggerFor]="producto">Productos</button>
     </mat-menu>
-
     
-
+    
+    
     <!-- Se van a mostrar cuando la pantalla sea mayor a 700px -->
     <!-- Botón para la vista de Inicio -->
     <button id="menuInicio" mat-button routerLink="/inicio">Inicio</button>
-
+    
     <!-- Menu desplegable -> PRODUCTOS -->
     <button id="menuProducto" mat-button [matMenuTriggerFor]="producto">Productos</button>
     <mat-menu #producto="matMenu">
-        <button mat-menu-item routerLink="/Auriculares">Auriculares</button>
-        <button mat-menu-item routerLink="/Celulares">Celulares</button>
-        <button mat-menu-item routerLink="/Teclados">Teclados</button>
-        <button mat-menu-item routerLink="/Mouses">Mouses</button>
-        <button mat-menu-item routerLink="/Productos">Productos</button>
+      <button mat-menu-item routerLink="/Auriculares">Auriculares</button>
+      <button mat-menu-item routerLink="/Celulares">Celulares</button>
+      <button mat-menu-item routerLink="/Teclados">Teclados</button>
+      <button mat-menu-item routerLink="/Mouses">Mouses</button>
+      <button mat-menu-item routerLink="/Productos">Productos</button>
     </mat-menu>
-
+    
+      <span class="title">TechZone</span>
+    
     <span class="example-spacer"></span>
 
     <!-- Inicio de sesión y el Registro de un nuevo usuario -->

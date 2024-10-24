@@ -59,3 +59,55 @@ button{
     font-weight: 700;
     font-style: normal;
 }
+
+mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 1.5em; /* Ajusta el tamaño según lo necesites */
+  }
+  
+  .logo-container {
+    margin-right: 16px; /* Espacio entre logo y título */
+  }
+  
+
+
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos en los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 10px;
+  }
+  
+  .navbar-title {
+    flex-grow: 6; /* Permite que el título ocupe el espacio disponible */
+    text-align: center; /* Centra el texto del título */
+    font-size: 24px; /* Tamaño del texto del título */
+    color: black; /* Cambia esto según el color deseado */
+  }
+  
+
+  .title{
+    
+    flex-grow: 4;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+    font-variation-settings:
+      "EDPT" 100,
+      "EHLT" 12;
+    font-variation-settings:
+      "BLED" 0,
+      "SCAN" 0,
+      "XELA" 0,
+      "YELA" 0;
+    color: rgb(21, 21, 26);
+  }
