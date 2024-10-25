@@ -47,7 +47,7 @@ export class IniciosesionComponent {
       //condicional verificada que ese usuario de la BD existiera o que sea igual al de nuestra collecion
       if (!usuarioBD || usuarioBD.empty) {
         Swal.fire({
-          title: "mal ahi!",
+          title: "hubo un error",
           text: "correo electronico incorrecto!",
           icon: "error"
         });
@@ -116,4 +116,5 @@ export class IniciosesionComponent {
       password: this.usuarios.password = ''
     }
   }
+  
 }

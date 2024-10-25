@@ -75,7 +75,7 @@ export class AuthService {
     observamos  cambios en valores, mapeamos al documento de 'usuario' e identificamos 
     el atributo de rol (aun si este es nulo) */
 
-    return this.servicioFirestore.collection('usuario').doc(uid).valueChanges()
+    return this.servicioFirestore.collection('usuarios').doc(uid).valueChanges()
     .pipe(map((usuario: any) => usuario ? usuario.rol : null));
 
 

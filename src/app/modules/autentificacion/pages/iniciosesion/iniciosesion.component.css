@@ -9,3 +9,11 @@
     width: 120px;
     margin: auto;
 }
+
+
+h1{
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(156, 88, 43);
+}

@@ -11,3 +11,24 @@ app-cardteclados{
     display: flex;
     justify-content: center;
 }
+
+.title{
+    display: flex;
+    justify-content: center;
+    flex-grow: 4;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+    font-variation-settings:
+      "EDPT" 100,
+      "EHLT" 12;
+    font-variation-settings:
+      "BLED" 0,
+      "SCAN" 0,
+      "XELA" 0,
+      "YELA" 0;
+    color: rgb(156, 88, 43);
+   
+  }

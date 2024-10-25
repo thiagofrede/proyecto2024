@@ -52,6 +52,8 @@ background: linear-gradient(90deg, rgba(99,99,122,1) 0%, rgba(74,74,125,1) 27%, 
     width: 80px;  /* Ancho de 100 píxeles */
     height: 80px; /* Alto de 100 píxeles */
     object-fit: contain; /* Mantiene la proporción de la imagen */
+    cursor: pointer;
+
 }
 
 button{
@@ -85,17 +87,11 @@ mat-toolbar {
     padding: 10px;
   }
   
-  .navbar-title {
-    flex-grow: 6; /* Permite que el título ocupe el espacio disponible */
-    text-align: center; /* Centra el texto del título */
-    font-size: 24px; /* Tamaño del texto del título */
-    color: black; /* Cambia esto según el color deseado */
-  }
-  
+
 
   .title{
-    
-    flex-grow: 4;
+    display: flex;
+    justify-content: center;
     text-align: center;
     font-size: 1.5em;
     font-family: "Rubik Wet Paint", system-ui;
@@ -110,4 +106,5 @@ mat-toolbar {
       "XELA" 0,
       "YELA" 0;
     color: rgb(21, 21, 26);
+      padding-right: 110px;
   }

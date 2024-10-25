@@ -1,4 +1,5 @@
 <!-- Card para mostrar TODOS los productos que se hayan ingresado -->
+ 
 <div class="row">
     <div class="col" *ngFor="let producto of coleccionAuriculares">
         <div class="card" style="width: 18rem;">
@@ -6,7 +7,7 @@
 
             <div class="card-body">
                 <h5 class="card-title">{{producto.Nombre}}</h5>
-                <p class="card-text">{{producto.Precio}}</p>
+                <p class="card-text">{{producto.Precio}}$</p>
 
                 <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" 
                 data-bs-target="#modalCardAuriculares" (click)="mostrarVer(producto)">

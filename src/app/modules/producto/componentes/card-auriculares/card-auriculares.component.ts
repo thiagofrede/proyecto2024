@@ -49,5 +49,7 @@ export class CardAuricularesComponent {
 
     this.productoSeleccionado = info;
   }
+
+  //filtro
   
 }

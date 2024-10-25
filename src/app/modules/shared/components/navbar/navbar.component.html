@@ -1,7 +1,6 @@
 <mat-toolbar>
-
   <div>
-    <img mat-card-image  src="./assets/logos/logo.png" alt="" class="logo">
+    <img mat-card-image  routerLink="/inicio" src="./assets/logos/logo.png" alt="" class="logo">
   </div>
   
   <!-- Menú desplegable para cuando la pantalla sea menor a 700px -->
@@ -29,10 +28,7 @@
       <button mat-menu-item routerLink="/Mouses">Mouses</button>
       <button mat-menu-item routerLink="/Productos">Productos</button>
     </mat-menu>
-    
-      <span class="title">TechZone</span>
-    
-    <span class="example-spacer"></span>
+  <span class="title">TechZone</span>
 
     <!-- Inicio de sesión y el Registro de un nuevo usuario -->
     <button mat-icon-button [matMenuTriggerFor]="usuario"><mat-icon>person</mat-icon></button>
