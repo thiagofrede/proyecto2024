@@ -10,3 +10,57 @@
     display: block;  /* Hace que la imagen se comporte como un bloque para mejor alineación */
     margin: 0 auto;  /* Centra la imagen dentro del modal */
 }
+
+
+
+
+/* csss*/
+/* General styles for the table */
+.table {
+  margin: 20px 0;
+}
+
+/* Make images in the table responsive */
+.table img {
+  max-width: 100%;
+  height: auto; /* Ensures aspect ratio is maintained */
+}
+
+/* Button styles */
+.btn-online-primary {
+  background-color: #007bff; /* Example color */
+  color: white;
+}
+
+.btn-online-primary:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Responsive modal images */
+.modal-img {
+  width: 100%; /* Full width for modals */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Adjust padding for mobile view */
+@media (max-width: 576px) {
+  .modal-body {
+    padding: 10px; /* Less padding on smaller screens */
+  }
+
+  .table th,
+  .table td {
+    padding: 8px; /* Reduced padding for table cells */
+  }
+
+  .btn {
+    font-size: 0.9rem; /* Slightly smaller buttons */
+  }
+}
+
+/* General adjustments */
+@media (max-width: 768px) {
+  .table-responsive {
+    overflow-x: auto; /* Ensure horizontal scrolling */
+  }
+}

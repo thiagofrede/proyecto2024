@@ -33,16 +33,16 @@
 </div>
 
 <!-- Modal para ver más información -->
-<div class="modal fade" id="modalCard" *ngIf="modalVisible" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modalCard"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
 
-            <div class="modal-header">
+            <div class="modal-header" *ngIf="modalVisible">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">{{productoSeleccionado.Nombre}}</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
-            <div class="modal-body">
+            <div class="modal-body" *ngIf="modalVisible">
                 <img src="{{productoSeleccionado.Imagen}}" alt="{{productoSeleccionado.Alt}}" width="100px">
 
                 <div class="mb-3">
