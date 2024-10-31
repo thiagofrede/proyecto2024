@@ -81,10 +81,10 @@
                   <label class="form-label">Seleccione una categoría:</label>
                   <select class="form-control form-select" formControlName="categoria" aria-label="Default select example">
                       <option disabled selected>Elija una opción</option>
-                      <option value="alimentacion">Auriculares</option>
-                      <option value="indumentaria">Tecladaos</option>
-                      <option value="juguetes">Celulares</option>
-                      <option value="juguetes">Mouses/option>
+                      <option value="Auriculares">Auriculares</option>
+                      <option value="Teclados">Teclados</option>
+                      <option value="Celulares">Celulares</option>
+                      <option value="Mouses">Mouses</option>
                   </select>
               </div>
 
@@ -99,7 +99,7 @@
                       (change)="cargarImagen($event)" -> ejecuta el evento de cargarImagen que definimos 
                       en la lógica del componente
                   -->
-                  <input type="file" accept="imagen/*" (change)="cargarImagen($event)">
+                  <input type="file" accept="Imagen/*" (change)="cargarImagen($event)">
               </div>
 
               <div class="mb-3">
@@ -153,9 +153,10 @@
                   <label class="form-label">Seleccione una categoría:</label>
                   <select class="form-control form-select" formControlName="categoria" aria-label="Default select example">
                       <option disabled selected>Elija una opción</option>
-                      <option value="alimentacion">Alimentación</option>
-                      <option value="indumentaria">Indumentaria</option>
-                      <option value="juguetes">Juguete</option>
+                      <option value="Teclados">Teclados</option>
+                      <option value="Mouses">Mouses</option>
+                      <option value="Auriculares">Auriculares</option>
+                      <option value="Celulares">Celulares</option>
                   </select>
               </div>
 

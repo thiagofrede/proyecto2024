@@ -37,7 +37,7 @@ export class CardMousesComponent {
       // Si la categoría del producto es igual a "auriculares", se enviará a la 
       // colección de juguetes específicada
 
-      if(Producto.Categoria === "auriculares"){
+      if(Producto.Categoria === "Mouses"){
         // .push: sube o agrega un item a una colección
         this.coleccionAuriculares.push(Producto);
       }

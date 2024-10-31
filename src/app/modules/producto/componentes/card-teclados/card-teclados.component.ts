@@ -38,7 +38,7 @@ export class CardTecladosComponent {
       // Si la categoría del producto es igual a "teclados", se enviará a la 
       // colección de juguetes específicada
 
-      if(Producto.Categoria === "teclados"){
+      if(Producto.Categoria === "Teclados"){
         // .push: sube o agrega un item a una colección
         this.coleccionTeclados.push(Producto);
       }
