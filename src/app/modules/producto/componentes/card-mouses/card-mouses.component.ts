@@ -17,6 +17,10 @@ export class CardMousesComponent {
 
   productoSeleccionado!: Producto;
 
+  //debajo del modalvisible
+compravisible:boolean = false
+  notificacion:string = '';
+
   modalVisible: boolean = false;
 
   constructor(public servicioCrud: CrudService){}
@@ -50,4 +54,6 @@ export class CardMousesComponent {
 
     this.productoSeleccionado = info;
   }
+
+
 }
