@@ -1,0 +1,15 @@
+<p>pedido works!</p>
+<div class="row">
+    <div class="col-lg-4">
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let pedido or productos">
+                {{pedido.Cantidad}}  {{pedido.producto.nombre}} - ${{pedido.total}}
+
+
+                <!--<button class="btn btn-danger" (click)="QuitarPedido(pedido)" ></button>-->
+            </li>
+
+        </ul>
+
+    </div>
+</div>
