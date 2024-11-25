@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Pedido } from 'src/app/models/pedido';
-import { CarritoService } from '../carrito.module';
-import { AuthService } from '../../autentificacion/services/auth.service';
+import { CarritoService } from '../../service/carrito.service';
+import { AuthService } from 'src/app/modules/autentificacion/services/auth.service';
 
 
 @Component({
@@ -36,8 +36,7 @@ export class PedidoComponent {
   }
   
   
-  /*ABAJO DEL NGONINIT */
-  /*quitarPedido(pedido:Pedido){
-
-} */
+  quitarPedido(pedido:Pedido){
+    this.servicioCarrito.borrarPedido(pedido);
+  }
 }

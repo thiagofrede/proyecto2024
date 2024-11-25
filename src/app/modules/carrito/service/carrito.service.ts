@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { CrudService } from '../../admin/services/crud.service';
 import { AuthService } from '../../autentificacion/services/auth.service';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 import { Producto } from 'src/app/models/producto';
@@ -26,7 +27,7 @@ export class CarritoService {
     },
     cantidad: 0,
     total: 0,
-    Imagen:''
+   
   }
 
   private pedidosColeccion: AngularFirestoreCollection<Pedido>
