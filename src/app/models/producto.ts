@@ -6,5 +6,5 @@ Descripcion:string;
 Categoria:string;
 Imagen:string;
 Alt:string;
-
+Stock:number;
 }

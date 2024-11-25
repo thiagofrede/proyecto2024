@@ -7,6 +7,7 @@
           <th scope="col">Precio</th>
           <th scope="col">Descripción</th>
           <th scope="col">Categoría</th>
+          <th scope="col">Stock</th>
           <th scope="col">Acciones</th>
       </tr>
   </thead>
@@ -22,6 +23,7 @@
           <td>{{producto.Precio}}</td>
           <td>{{producto.Descripcion}}</td>
           <td>{{producto.Categoria}}</td>
+          <td>{{producto.Stock}}</td>
 
           <!-- ACCIONES -->
           <!-- EDITAR-->
@@ -107,6 +109,10 @@
                   <input class="form-control" type="text" formControlName="alt"
                       placeholder="Ingrese un texto alternativo">
               </div>
+              <div class="mb-3">
+                <label class="form-label"> Ingrese stock de su producto:</label>
+                <input class="form-control" type="number" formControlName="stock">
+            </div>
           </div>
 
           <!-- ACCIONES DEL MODAL -->
@@ -172,6 +178,10 @@
                   <input class="form-control" type="text" formControlName="alt"
                       placeholder="{{productoEdit.Alt}}">
               </div>
+              <div class="mb-3">
+                <label class="form-label"> Ingrese stock de su producto:</label>
+                <input class="form-control" type="number" formControlName="stock">
+            </div>
           </div>
 
           <!-- ACCIONES DEL MODAL -->

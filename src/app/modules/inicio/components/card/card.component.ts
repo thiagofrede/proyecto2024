@@ -17,38 +17,10 @@ Descubre nuestra selección de productos destacados, cuidadosamente elegidos par
 
 
   // PROPIEDAD PÚBLICA (TIPO ARRAY)
-  public info: Producto[];
+
 
   constructor(){
-    this.info = [
-      {
-        idProducto: "",
-        Nombre: "JBL Wave 100TWS",
-        Precio: 40,
-        Descripcion: "Los JBL Wave 100TWS son auriculares inalámbricos compactos y ligeros, diseñados para ofrecer una experiencia de sonido envolvente con la calidad característica de JBL. Vienen con una carcasa de carga compacta que facilita su transporte y carga. Los auriculares tienen un diseño ergonómico que se adapta cómodamente al oído, proporcionando un ajuste seguro y cómodo. Son ideales para el uso diario, ya sea en desplazamientos, durante el ejercicio, o en el trabajo.",
-        Categoria: "Auriculares Inalámbricos",
-        Imagen: "./assets/cardsauriculares/a.inalm1.png",
-        Alt: "auriculares",
-      },
-      {
-        idProducto: "",
-        Nombre: "JBL Wave 100TWS",
-        Precio: 40,
-        Descripcion: "Los JBL Wave 100TWS son auriculares inalámbricos compactos y ligeros, diseñados para ofrecer una experiencia de sonido envolvente con la calidad característica de JBL. Vienen con una carcasa de carga compacta que facilita su transporte y carga. Los auriculares tienen un diseño ergonómico que se adapta cómodamente al oído, proporcionando un ajuste seguro y cómodo. Son ideales para el uso diario, ya sea en desplazamientos, durante el ejercicio, o en el trabajo.",
-        Categoria: "Auriculares Inalámbricos",
-        Imagen: "./assets/cardsauriculares/a.inalm1.png",
-        Alt: "auriculares",
-      },
-      {
-        idProducto: "",
-        Nombre: "JBL Wave 100TWS",
-        Precio: 40,
-        Descripcion: "Los JBL Wave 100TWS son auriculares inalámbricos compactos y ligeros, diseñados para ofrecer una experiencia de sonido envolvente con la calidad característica de JBL. Vienen con una carcasa de carga compacta que facilita su transporte y carga. Los auriculares tienen un diseño ergonómico que se adapta cómodamente al oído, proporcionando un ajuste seguro y cómodo. Son ideales para el uso diario, ya sea en desplazamientos, durante el ejercicio, o en el trabajo.",
-        Categoria: "Auriculares Inalámbricos",
-        Imagen: "./assets/cardsauriculares/a.inalm1.png",
-        Alt: "auriculares",
-      }
-    ]
+
   }
   
 }

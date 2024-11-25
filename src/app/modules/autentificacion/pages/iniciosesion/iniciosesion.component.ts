@@ -5,6 +5,7 @@ import { FirestoreService } from 'src/app/modules/shared/services/firestore.serv
 import { Router } from '@angular/router';
 import * as CryptoJS from 'crypto-js';
 import Swal from 'sweetalert2';
+import { CarritoService } from 'src/app/modules/carrito/service/carrito.service';
 
 @Component({
   selector: 'app-iniciosesion',
@@ -17,7 +18,8 @@ export class IniciosesionComponent {
   constructor(
     public servicioAuth: AuthService,
     public servicioFirestore: FirestoreService,
-    public servicioRutas: Router
+    public servicioRutas: Router,
+    public servicioCarrito: CarritoService
   ) { }
 
   // ############################# INGRESADO
@@ -95,6 +97,8 @@ export class IniciosesionComponent {
 
             //si eres visitante, redirecciona a la vista de 'inicio'
             this.servicioRutas.navigate(['/inicio']);
+
+            this.servicioCarrito.iniciarCart();
           }
 
 

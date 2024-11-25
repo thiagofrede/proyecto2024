@@ -26,7 +26,7 @@ export class RegistroComponent {
     nombre: '',
     apellido: '',
     email: '',
-    rol: 'visitante', //designamos un rol ya prederteminado asi no se puede elegir entre visitando o admin
+    rol: 'usuario', //designamos usuario ya que no hay otro rol
     password: ''
   }
 

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 import { ProductoRoutingModule } from './producto-routing.module';
 //si  no aparecen los componentes de material en los cards es pq no lo importamos y exportamos en el module.ts
@@ -15,6 +16,7 @@ import { MousesComponent } from './pages/mouses/mouses.component';
 
 //vistas del modulo tabla
 import { TableComponent } from '../admin/components/table/table.component';
+import { MatTabsModule } from '@angular/material/tabs';
 //componentes locales
 
 import { ProductosComponent } from './pages/productos/productos.component';
@@ -47,7 +49,10 @@ import { CardMousesComponent } from './componentes/card-mouses/card-mouses.compo
     ProductoRoutingModule,
     MatButtonModule,
     MatCardModule,
-    InicioModule
+    InicioModule,
+    MatTabsModule,
+    FormsModule,
+    ReactiveFormsModule
 ],
   exports:[
     MatButtonModule,
@@ -61,7 +66,10 @@ import { CardMousesComponent } from './componentes/card-mouses/card-mouses.compo
     CardAuricularesComponent,
     CarruselComponent,
     CardTecladosComponent,
-    CardMousesComponent
+    CardMousesComponent,
+    MatTabsModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class ProductoModule { }
